@@ -39,7 +39,7 @@ async function createDatabaseIfNotExists() {
   }
 }
 
-// await createDatabaseIfNotExists();
+await createDatabaseIfNotExists();
 
 const pool = new Pool({
   user: DB_USER,
@@ -47,9 +47,9 @@ const pool = new Pool({
   database: DB_NAME,
   password: DB_PASSWORD,
   port: DB_PORT,
-  ssl: {
-    rejectUnauthorized: false, // Required for Aiven SSL connections
-  },
+  // ssl: {
+  //   rejectUnauthorized: false, // Required for Aiven SSL connections
+  // },
 });
 
 export default pool;

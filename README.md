@@ -35,3 +35,19 @@ ORIGIN_URL=http://localhost:5173
 ```sh
 npm run start
 ```
+
+## Notes
+
+## -- Extra apis
+
+1. To add new product(POST-method): "http://localhost:5000/api/add-product"
+   body-json : {
+   "productName":"name",
+   "productDescription":"This is name of the product"
+   }
+
+---
+
+2. To delete product(DELETE-method):"http://localhost:5000/api/products/:id"
+
+---
